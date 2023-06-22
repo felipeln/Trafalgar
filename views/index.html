@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="/styles/main.css">
     <title>Trafalgar</title>
 </head>
@@ -117,15 +118,15 @@
 
 
         <section id="testimonials">
-           
             <div class="customers">
-
-
                 <article class="customer-card">
                     <h2>Our innovations and mentors</h2>
 
-                    <div class="testimonial">
-                        <img src="/images/ekaterina.jpg" alt="customer picture">
+                    <div id="ekaterina" class="testimonial">
+                        <div class="pfp-wrapper">
+                            <figure>
+                            </figure>
+                        </div>
                         <h4>Ekaterina  Bolovtsova</h4>
                         <p>“Our dedicated patient engagement app and 
                             web portal allow you to access information instantaneously (no tedeous form, long calls, 
@@ -135,8 +136,11 @@
                 <article class="customer-card">
                     <h2>Our innovations and mentors</h2>
 
-                    <div class="testimonial">
-                        <img src="/images/jack.jpg" alt="customer picture">
+                    <div id="jack" class="testimonial">
+                        <div class="pfp-wrapper">
+                            <figure>
+                            </figure>
+                        </div>
                         <h4>Jack Winbow</h4>
                         <p>“Our dedicated patient engagement app and 
                             web portal allow you to access information instantaneously (no tedeous form, long calls, 
@@ -146,31 +150,48 @@
                 <article class="customer-card">
                     <h2>Our innovations and mentors</h2>
 
-                    <div class="testimonial">
-                        <img src="/images/dziana.jpg" alt="customer picture">
+                    <div id="dziana" class="testimonial">
+                        <div class="pfp-wrapper">
+                            <figure>
+                            </figure>
+                        </div>
                         <h4>Dziana Hansanbekava</h4>
                         <p>“Our dedicated patient engagement app and 
                             web portal allow you to access information instantaneously (no tedeous form, long calls, 
                             or administrative hassle) and securely”</p>
                     </div>
                 </article>
+                <article class="customer-card">
+                    <h2>Our innovations and mentors</h2>
 
+                    <div id="anna" class="testimonial">
+                        <div class="pfp-wrapper">
+                            <figure>
+                            </figure>
+                        </div>
+                        <h4>Anna Nekrashevich</h4>
+                        <p>“Our dedicated patient engagement app and 
+                            web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                            or administrative hassle) and securely”</p>
+                    </div>
+                </article>
             </div>
 
             <nav id="carousel-nav">
-                <a href="#" class="left-arrow">
+                <button  aria-label="previous card" class="left-arrow">
                     <span>previous</span>
-                </a>
-                <ul class="carousel-indicators">
-                    <li><a aria-label="carousel dot navigation"  href="#" class="dot"></a></li>
-                    <li><a aria-label="carousel dot navigation" href="#" class="dot"></a></li>
-                    <li><a aria-label="carousel dot navigation" href="#" class="dot"></a></li>
-                    <li><a aria-label="carousel dot navigation" href="#" class="dot"></a></li>
-                </ul>
-                <a href="#" class="right-arrow">
+                </button>
+                <div class="carousel-indicators">
+                    <button aria-label="carousel button navigation"   class="dot selecionado"></button></li>
+                    <button aria-label="carousel button navigation"  class="dot"></button></li>
+                    <button aria-label="carousel button navigation"  class="dot"></button></li>
+                    <button aria-label="carousel button navigation"  class="dot"></button></li>
+                </div>
+                <button  aria-label="previous card" class="right-arrow">
                     <span>next</span>
-                </a>
+                </button>
             </nav>
+
         </section>
 
 
@@ -262,6 +283,8 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="/scripts/index.js"></script>
+
 </body>
 </html>
