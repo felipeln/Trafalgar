@@ -459,8 +459,8 @@ h2::after{
     font-size: 2.2rem;
 }
 .testimonial .pfp-wrapper{
-    width: clamp(14.8rem, 30vw, 32rem);
-    height: clamp(14.8rem, 30vw, 32rem);
+    width: clamp(14.8rem, 30vw, 25rem);
+    height: clamp(14.8rem, 30vw, 25rem);
     overflow: hidden;
     border: 4px solid #fff;
     border-radius: 50%;
@@ -560,7 +560,7 @@ h2::after{
 
     background-color: var(--primary-color);
     opacity: 0.5;
-    border: 5px solid var(--primary-color);
+    border: none;
 
     border-radius: 50%;
     
@@ -778,15 +778,6 @@ footer .logo span{
         transform: translateX(0);
     }
 }
-@keyframes carousel {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100%{
-        transform: translateX(0%);
-    }
-}
 
 
 
@@ -830,7 +821,7 @@ footer .logo span{
         opacity: 1;
         overflow: visible;
 
-        max-width: 55.4rem;
+        max-width: 58.5rem;
         height: 2.3rem;
 
         background-color: var(--bg-color);
@@ -950,7 +941,17 @@ footer .logo span{
     }
   
 
-    
+    .testimonial{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        text-align: center;
+    }
+    .testimonial h4{
+        flex-shrink: 1;
+    }
 
     .testimonial p{
         max-width: 42.5rem;

@@ -34,9 +34,8 @@ let flkty = new Flickity (carousel, {
     // options
     cellAlign: 'left',
     contain: true,
-    freeScroll: true,
     wrapAround: true,
-    autoPlay: true, // every 3s
+    autoPlay: 5000, // every 3s
     
     prevNextButtons: false,
     pageDots: false
