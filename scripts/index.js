@@ -24,7 +24,7 @@ for (const link of menuLinks) {
     })
 }
 
-
+ 
 
 let utils = window.fizzyUIUtils;
 
