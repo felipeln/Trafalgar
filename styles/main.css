@@ -145,7 +145,7 @@ header nav ul{
    
 }
 
-.ativo{
+.menu-ativo{
     display: flex;
     opacity: 1;
     overflow: visible;
@@ -153,6 +153,7 @@ header nav ul{
      animation-name: topdown;
     animation-duration: 0.7s;
     animation-timing-function: ease-in-out;
+    z-index: 1;
     /* transform: translateX(0); */
 }
 header nav ul li{
@@ -997,7 +998,6 @@ footer .logo span{
 
     
 }
-
 
 
 /* adding scroll with js */

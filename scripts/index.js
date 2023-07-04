@@ -9,9 +9,9 @@ function initMobileMenu(){
         mobileBtn.classList.toggle('open')
 
         if(mobileBtn.classList.contains('open')){
-            menuList.classList.add('ativo')
+            menuList.classList.add('menu-ativo')
         }else{
-            menuList.classList.remove('ativo')
+            menuList.classList.remove('menu-ativo')
         }
     })
 
@@ -20,7 +20,7 @@ function initMobileMenu(){
             
             if(mobileBtn.classList.contains('open')){
                 mobileBtn.classList.remove('open')
-                menuList.classList.remove('ativo')
+                menuList.classList.remove('menu-ativo')
             }
         })
     }
