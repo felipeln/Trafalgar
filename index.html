@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="/styles/main.css">
     <title>Trafalgar</title>
+    <script>
+        document.documentElement.className += ' js'
+    </script>
 </head>
 <body>
     <div class="page">
@@ -18,7 +21,7 @@
                     <span>T</span>
                     Trafalgar
                 </div>
-                <ul id="menu-list">
+                <ul id="menu-list" class="js-menu">
                     <li><a href="#main">Home</a></li>
                     <li><a href="#services">Find a doctor</a></li>
                     <li><a href="#app">Apps</a></li>
@@ -31,7 +34,7 @@
                     <span class="line3"></span>
                 </div>
             </nav>
-        <main id="main">
+        <main id="main" class="js-scroll">
                 <div class="header-text">
                     <h1>Virtual healthcare for you</h1>
                     <p>Trafalgar provides progressive, and affordable 
@@ -45,7 +48,7 @@
         </main>
         </header>
 
-        <section id="services">
+        <section id="services" class="js-scroll">
             <h2>Our services</h2>
             <p class="service-desc">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
 
@@ -91,7 +94,7 @@
         </section>
         
 
-        <section id="providers">
+        <section id="providers" class="js-scroll">
             <div class="provider-img">
                 <img src="/images/providers.svg" alt="medial services illustration">
             </div>
@@ -103,7 +106,7 @@
             </article>
         </section>
 
-        <section id="app">
+        <section id="app" class="js-scroll">
             <div class="app-img">
                 <img src="/images/mobile-app.svg" alt="mobile app usage illustration">
             </div>
@@ -117,7 +120,7 @@
         </section>
 
 
-        <section id="testimonials">
+        <section id="testimonials" class="js-scroll">
             <div class="customers">
                 <article class="customer-card">
                     <h2>Our innovations and mentors</h2>
@@ -193,7 +196,7 @@
             </nav>
         </section>
 
-        <section id="articles">
+        <section id="articles" class="js-scroll">
             <h2>Check our latest article</h2>
 
             <div class="articles-wrapper">
